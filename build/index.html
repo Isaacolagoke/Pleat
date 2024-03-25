@@ -1,0 +1,642 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/build/assets/favicon.png">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <title>Pleat</title>
+</head>
+<body class="font-Manrope  bg-slate-50">
+  
+<!-- Header -->
+
+<header class="lg:h-screen h-fit flex flex-col justify-between max-w-full">
+ 
+  <nav class="mx-auto w-screen h-fit overflow-hidden py-4 max-w-[1440px] px-4 sm:px-6 lg:px-8 ">
+    <div class="py-4 h-16 mx-auto flex items-center justify-between border-gray-200 border-b">
+        <div>
+            <img src="assets/pleat-logo.png" class="z-50" width="100" height="100" alt="Pleat logo">
+        </div>
+        <div class="flex lg:gap-8 gap-6 tracking-wider cursor-pointer text-base items-center text-gray-800" id="navItems">
+            <a href="./index.html" class="group hover:text-pt-primary">
+                About
+                <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+            </a>
+            <a href="./" href class="group hover:text-pt-primary">
+                Invest
+                <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+            </a>
+            <a href="#contact" class="group hover:text-pt-primary">
+                Portfolio
+                <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+            </a>
+            <a href="#contact" class="group hover:text-pt-primary">
+              News
+              <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+            </a>
+            <a href="#contact" class="group hover:text-pt-primary">
+              Contact
+              <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+            </a>
+        </div>
+        <div id="hamburger" class="fa fa-bars flex items-center text-xl" style="display:none;"></div>
+        <div id="mobileNav"
+            class="fixed flex flex-col gap-8 pt-16 px-4 text-lg z-50 text-black bg-white  inset-0 top-16 w-[70%] 
+            left-[-70%] ease-in-out duration-500 cursor-pointer">
+            <a href="./">About</a>
+            <a href="./">Invest</a>
+            <a href="./">Portfolio</a>
+            <a href="./">News</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- description -->
+<div class="flex flex-col md:flex-row sm:flex-row justify-between max-w-[1440px] 
+px-4 sm:px-6 lg:px-8 gap-y-6 pb-6 pt-6 lg:flex-row md:items-end sm:items-start mx-auto lg:items-end">
+
+  <div class="flex-1">
+    <h1 class="
+    font-display text-5xl sm:text-7xl
+    lg:w-4/5 lg:font-leading text-gray-900 md:text-6xl font-semibold tracking-tight ">
+      Invest in high yield Real Estate
+    </h1>
+  </div>
+
+  <div class="flex-1 ">
+    <p class="text-gray-700 text-lg lg:w-3/4 lg:pr-4">
+      Unlock Your Future with Pleat Real Estate Investments,
+      Grow your wealth with our proven strategies and expert guidance.
+    </p>
+    <button class="ease-linear duration-500 mt-4 py-3 px-3 text-white font-medium bx">Learn more about Investing</button>
+  </div>
+</div>
+
+  <!-- properties -->
+  <div class="mx-auto gap-x-0 gap-y-5 grid max-w-[1440px] grid-cols-1 lg:grid-cols-3 sm:grid-cols-2  px-4 sm:px-6 lg:px-8">
+    <!-- 1 -->
+    <div class="border-gray-200 lg:border-t lg:border-r sm:px-4 sm:py-4 md:px-4 md:py-4 lg:px-6 lg:py-6">
+      <img src="./assets/1.png" class="w-full h-1/2" alt="">
+
+      <p class="text-lg text-gray-700 font-semibold mt-4">
+        Brick & Beam Lofts
+      </p>
+
+      <p class="mt-4 text-sm text-gray-600">
+        Ideal for investors seeking strong rental income and exposure to the charm and character of established city areas.
+      </p>
+      <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+        <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_473_3337)">
+          <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_473_3337">
+          <rect width="20" height="20"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </span>
+      </button>
+    </div>
+
+     <!-- 2 -->
+     <div class="border-gray-200 lg:border-t lg:border-r sm:px-4 sm:py-4 md:px-4 md:py-4 lg:px-6 lg:py-6">
+      <img src="./assets/01.png" class="w-full h-1/2" alt="">
+
+      <p class="text-lg text-gray-700 font-semibold mt-4">
+        Brick & Beam Lofts
+      </p>
+
+      <p class="mt-4 text-sm text-gray-600">
+        Ideal for investors seeking strong rental income and exposure to the charm and character of established city areas.
+      </p>
+      <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+        <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_473_3337)">
+          <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_473_3337">
+          <rect width="20" height="20"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </span>
+      </button>
+     </div>
+
+     <!-- 3 -->
+     <div class="border-gray-200 lg:border-t mt-0 sm:px-4 sm:py-4 md:px-4 md:py-4 lg:px-6 lg:py-6">
+      <img src="./assets/02.png" class="w-full h-1/2" alt="">
+
+      <p class="text-lg text-gray-700 font-semibold mt-4">
+        Brick & Beam Lofts
+      </p>
+
+      <p class="mt-4 text-sm text-gray-600">
+        Ideal for investors seeking strong rental income and exposure to the charm and character of established city areas.
+      </p>
+      <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+        <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_473_3337)">
+          <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_473_3337">
+          <rect width="20" height="20"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </span>
+      </button>
+     </div>
+
+
+  </div>
+
+</header>
+
+<!-- Investment approach -->
+  
+<section class="lg:py-24 sm:py-16 mt-16">
+  
+  <div class="h-full grid  mx-auto gap-8 px-4 sm:px-6 lg:px-8 p-x-0 gap-y-5 max-w-[1440px] grid-cols-1 lg:grid-cols-2 sm:grid-cols-2 ">
+
+    <div class="flex flex-col">
+
+      <div class="flex-1">
+        <p class="uppercase text-base tracking-widest text-gray-500">
+          HOW WE INVEST
+        </p>
+
+        <h4 class="text-4xl font-semibold mt-5">
+          Our Investment Approach
+        </h4>
+
+        <p class="mt-2 font-normal text-gray-500 lg:w-2/4">
+          Pleat offers a variety of investment options to suit your needs
+        </p>
+
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-0 gap-y-4 mt-10">
+
+          <!-- 1 -->
+         <div class="border-gray-200 lg:border-t lg:border-b lg:border-r sm:px-4 sm:py-4 md:px-4 md:py-4 lg:px-4 
+        hover:bg-slate-100 ease-in-out duration-500 lg:py-6">
+              
+        
+              <p class="text-lg text-gray-700 font-semibold mt-8">
+                Direct Ownership
+              </p>
+        
+              <p class="mt-4 text-sm text-gray-600">
+                Invest directly in carefully selected properties and enjoy the benefits of rental income and potential property appreciation.
+              </p>
+              <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+                <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_473_3337)">
+                  <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_473_3337">
+                  <rect width="20" height="20"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  </span>
+              </button>
+          </div>
+
+           <!-- 2 -->
+          <div class="border-gray-200 lg:border-t lg:border-b sm:px-4 sm:py-4 md:px-4 md:py-4 lg:px-4 
+           hover:bg-slate-100 ease-in-out duration-500 lg:py-6">
+                 
+           
+                 <p class="text-lg text-gray-700 font-semibold mt-8">
+                  Investment Funds
+                 </p>
+           
+                 <p class="mt-4 text-sm text-gray-600">
+                  Participate in curated real estate investment funds that offer diversification and professional management.
+                 </p>
+                 <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+                   <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0_473_3337)">
+                     <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_473_3337">
+                     <rect width="20" height="20"/>
+                     </clipPath>
+                     </defs>
+                     </svg>
+                     </span>
+                 </button>
+          </div>
+
+        </div>
+
+      </div>
+   
+    </div>
+
+    <div class="overflow-hidden">
+      <div style="background-image: url(./assets/02.png);" class="hover:scale-105 ease-linear duration-500 bg-cover h-full flex-2 w-full">
+
+      </div>
+    </div>
+ 
+
+  </div>
+
+</section>
+
+
+<!-- Numbers -->
+
+<section class="mt-16 lg:py-24 sm:py-16 bg-slate-900">
+
+  <div class="h-full grid  mx-auto gap-8 px-4 py-8 sm:px-6 lg:px-8 gap-y-5 max-w-[1440px] grid-cols-1 lg:grid-cols-2 sm:grid-cols-2">
+
+    <div class="">
+      <p class="text-base tracking-widest font-semibold uppercase text-gray-200">
+        OUR STORY
+      </p>
+
+      <h2 class="mt-8 lg:leading-tight leading-none text-white lg:text-5xl sm:text-4xl text-4xl font-semibold">
+        We're empowering individuals to achieve financial security through strategic real estate investments.
+      </h2>
+    </div>
+
+    <div class="flex flex-col">
+
+      <div class="w-full">
+
+        <h4 class="text-3xl text-gray-200 font-bold">$100 million</h4>
+        <p class="text-base tracking-widest font-medium uppercase mt-2 text-gray-300">
+          Total Portfolio Value
+        </p>
+        <p class="text-sm font-normal mt-2 text-gray-400">
+          In high-performing properties across diverse markets.
+        </p>
+
+        <div class="gradient-line mt-4"></div>
+      </div>
+
+      <!-- 2 -->
+
+      <div class="w-full mt-9">
+
+        <h4 class="text-3xl text-gray-200 font-bold">$50 million</h4>
+        <p class="text-base tracking-widest font-medium uppercase mt-2 text-gray-300">
+          Capital Raised
+        </p>
+        <p class="text-sm font-normal mt-2 text-gray-400">
+          From a growing network of satisfied investors.
+        </p>
+
+        <div class="gradient-line mt-4"></div>
+      </div>
+
+      <div class="w-full mt-9">
+
+        <h4 class="text-3xl text-gray-200 font-bold">200</h4>
+        <p class="text-base tracking-widest font-medium uppercase mt-2 text-gray-300">
+          Investor Community
+        </p>
+        <p class="text-sm font-normal mt-2 text-gray-400">
+           investors trusting Pleat to guide their real estate journey.
+        </p>
+
+        <div class="gradient-line mt-4"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Portfolio -->
+
+<section class="mt-16 lg:py-24 sm:py-16 ">
+
+  <div class=" max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 p-x-0">
+   
+    <!-- header -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-1 justify-between">
+        
+        <div class="sec-title">
+          <p class="uppercase text-base tracking-widest text-gray-500">
+            PORTFOLIO
+          </p>
+      
+          <h4 class="text-4xl font-semibold mt-5">
+            Our Portfolio
+          </h4>
+      
+          <p class="mt-2 font-normal text-lg text-gray-500 lg:w-2/4">
+            Trending properties with high yields
+          </p>
+        </div>
+
+          <button class="h-fit w-fit align-bottom ease-in-out duration-500 flex items-center 
+          mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium lg:place-self-end">
+          View all properties
+            <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_473_3337)">
+              <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_473_3337">
+              <rect width="20" height="20"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </span>
+          </button>
+      </div>
+
+    <!-- portfolios -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+
+        <!-- 1 -->
+          <div class="">
+
+            <div class="overflow-hidden h-403">
+              <img src="./assets/03.png" class="w-full h-full object-cover origin-center hover:scale-105 transition duration-500 " alt="">
+            </div>
+      
+            <p class="text-lg text-gray-700 font-semibold mt-4">
+              Brick & Beam Lofts
+            </p>
+      
+            <hr class="border-t-1 border-gray-200 my-4">
+
+            <p class="mt-4 text-sm text-gray-600">
+              Ideal for investors seeking strong rental income and exposure to the charm and character of established city areas.
+            </p>
+
+            <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+              <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_473_3337)">
+                <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_473_3337">
+                <rect width="20" height="20"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </span>
+            </button>
+          </div>
+
+           <!-- 2 -->
+          <div class="">
+
+            <div class="overflow-hidden h-403">
+              <img src="./assets/02.png" class="w-full h-full object-cover origin-center hover:scale-105 transition duration-500 " alt="">
+            </div>
+      
+            <p class="text-lg text-gray-700 font-semibold mt-4">
+              Skyline Studios
+            </p>
+      
+            <hr class="border-t-1 border-gray-200 my-4">
+
+            <p class="mt-4 text-sm text-gray-600">
+              Offers strong rental income potential and exposure to the vibrant energy of growing urban centres.
+            </p>
+
+            <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+              <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_473_3337)">
+                <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_473_3337">
+                <rect width="20" height="20"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </span>
+            </button>
+          </div>
+
+           <!-- 3 -->
+           <div class="">
+
+            <div class="overflow-hidden h-403">
+              <img src="./assets/01.png" class="w-full h-full object-cover origin-center hover:scale-105 transition duration-500 " alt="">
+            </div>
+      
+            <p class="text-lg text-gray-700 font-semibold mt-4">
+              Cornerstone Commerce
+            </p>
+      
+            <hr class="border-t-1 border-gray-200 my-4">
+
+            <p class="mt-4 text-sm text-gray-600">
+              This collection features strategically located retail spaces and shopping centres on bustling city corners.
+            </p>
+
+            <button class="ease-in-out duration-500 flex items-center mt-3 py-3 px-3 border border-gray-400 bg-transparent hover:bg-slate-100 font-medium">Learn more
+              <span class="pl-3 text-gray-400 hover:-rotate-12 ease-in-out duration-500"><svg width="20" height="20" viewBox="0 0 20 20" class="text-gray-400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_473_3337)">
+                <path d="M4.16634 10.8333H13.4747L9.40801 14.9C9.08301 15.225 9.08301 15.7583 9.40801 16.0833C9.73301 16.4083 10.258 16.4083 10.583 16.0833L16.0747 10.5917C16.3997 10.2667 16.3997 9.74167 16.0747 9.41667L10.5913 3.91667C10.2663 3.59167 9.74134 3.59167 9.41634 3.91667C9.09134 4.24167 9.09134 4.76667 9.41634 5.09167L13.4747 9.16667H4.16634C3.70801 9.16667 3.33301 9.54167 3.33301 10C3.33301 10.4583 3.70801 10.8333 4.16634 10.8333Z" fill="#1D2739"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_473_3337">
+                <rect width="20" height="20"/>
+                </clipPath>
+                </defs>
+                </svg>
+                </span>
+            </button>
+          </div>
+
+      </div>
+
+  </div>
+
+</section>
+
+
+<!-- Bolg/news -->
+
+
+<section class="mt-16 lg:py-24 sm:py-16">
+
+  <div class=" max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 p-x-0">
+
+     <!-- header -->
+      <div class="sec-title mx-auto w-full">
+    
+        <h4 class="text-4xl font-semibold text-center">
+          Pleo in the news
+        </h4>
+    
+        <p class="mt-2 font-normal text-lg text-gray-500 text-center">
+          What’s trending with Pleat, Investment tips and our portfolio.
+        </p>
+      </div>
+
+      <!-- sections -->
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 mt-8">
+
+        <!-- 1 -->
+        <div class="py-4 px-4 border border-gray-200">
+            <div class="bg-gray-100 px-2 py-3 w-fit">
+              <p class="text-sm text-gray-700 font-medium">Financing</p>
+            </div>
+            <p class="text-lg text-gray-900 font-semibold mt-4">
+              Portfolio Roundup
+            </p>
+            <hr class="border-t-1 border-gray-200 my-4">
+            <p class="text-base text-gray-600">Offers strong rental income potential and exposure to the vibrant energy of growing urban centres.</p>
+        </div>
+
+            <!-- 2 -->
+          <div class="py-4 px-4 border border-gray-200">
+              <div class="bg-gray-100 px-2 py-3 w-fit">
+                <p class="text-sm text-gray-700 font-medium">Buying</p>
+              </div>
+              <p class="text-lg text-gray-900 font-semibold mt-4 truncate">
+                Pathways squads to play Wentworthville tria
+              </p>
+              <hr class="border-t-1 border-gray-200 my-4">
+              <p class="text-base text-gray-600">Offers strong rental income potential and exposure to the vibrant energy of growing urban centres.</p>
+          </div>
+
+             <!-- 3 -->
+          <div class="py-4 px-4 border border-gray-200">
+              <div class="bg-gray-100 px-2 py-3 w-fit">
+                <p class="font-medium text-gray-700">Real Estate Tips</p>
+              </div>
+              <p class="text-lg text-gray-900 font-semibold mt-4 truncate">
+                The Charity Shield - More than just a trial
+              </p>
+              <hr class="border-t-1 border-gray-200 my-4">
+              <p class="text-base text-gray-600">Offers strong rental income potential and exposure to the vibrant energy of growing urban centres.</p>
+          </div>
+
+      </div>
+
+  
+  </div>  
+
+</section> 
+  
+
+<!-- footer -->
+<section class="mt-16 lg:py-24 sm:py-16 bg-slate-900">
+
+  <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 p-x-0">
+    
+      <div class="flex lg:flex-row flex-col justify-between gap-8 py-4 border-gray-200 border-b">
+        <!-- logo -->
+        <div class="">
+          <div>
+            <svg width="100" height="45" viewBox="0 0 100 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.24 34.5V11.46H11.136C11.36 11.46 11.6107 11.4707 11.888 11.492C12.176 11.5027 12.464 11.5347 12.752 11.588C13.9573 11.7693 14.976 12.1907 15.808 12.852C16.6507 13.5027 17.2853 14.324 17.712 15.316C18.1493 16.308 18.368 17.4067 18.368 18.612C18.368 19.8067 18.1493 20.9 17.712 21.892C17.2747 22.884 16.6347 23.7107 15.792 24.372C14.96 25.0227 13.9467 25.4387 12.752 25.62C12.464 25.6627 12.176 25.6947 11.888 25.716C11.6107 25.7373 11.36 25.748 11.136 25.748H4.592V34.5H2.24ZM4.592 23.508H11.072C11.264 23.508 11.488 23.4973 11.744 23.476C12 23.4547 12.2507 23.4173 12.496 23.364C13.2853 23.1933 13.9307 22.868 14.432 22.388C14.944 21.908 15.3227 21.3373 15.568 20.676C15.824 20.0147 15.952 19.3267 15.952 18.612C15.952 17.8973 15.824 17.2093 15.568 16.548C15.3227 15.876 14.944 15.3 14.432 14.82C13.9307 14.34 13.2853 14.0147 12.496 13.844C12.2507 13.7907 12 13.7587 11.744 13.748C11.488 13.7267 11.264 13.716 11.072 13.716H4.592V23.508ZM21.8725 34.5V10.98H24.2245V34.5H21.8725ZM36.3333 34.98C34.6479 34.98 33.1866 34.6067 31.9493 33.86C30.7226 33.1133 29.7679 32.0627 29.0853 30.708C28.4026 29.3533 28.0613 27.764 28.0613 25.94C28.0613 24.052 28.3973 22.42 29.0693 21.044C29.7413 19.668 30.6853 18.6067 31.9013 17.86C33.1279 17.1133 34.5733 16.74 36.2373 16.74C37.9439 16.74 39.3999 17.1347 40.6053 17.924C41.8106 18.7027 42.7226 19.8227 43.3413 21.284C43.9599 22.7453 44.2426 24.4893 44.1893 26.516H41.7893V25.684C41.7466 23.444 41.2613 21.7533 40.3333 20.612C39.4159 19.4707 38.0719 18.9 36.3013 18.9C34.4453 18.9 33.0213 19.5027 32.0293 20.708C31.0479 21.9133 30.5573 23.6307 30.5573 25.86C30.5573 28.036 31.0479 29.7267 32.0293 30.932C33.0213 32.1267 34.4239 32.724 36.2373 32.724C37.4746 32.724 38.5519 32.4413 39.4693 31.876C40.3973 31.3 41.1279 30.4733 41.6613 29.396L43.8533 30.244C43.1706 31.748 42.1626 32.916 40.8293 33.748C39.5066 34.5693 38.0079 34.98 36.3333 34.98ZM29.7253 26.516V24.548H42.9253V26.516H29.7253ZM52.3715 34.98C51.0702 34.98 49.9768 34.7453 49.0915 34.276C48.2168 33.8067 47.5608 33.1827 47.1235 32.404C46.6862 31.6253 46.4675 30.7773 46.4675 29.86C46.4675 28.9213 46.6542 28.1213 47.0275 27.46C47.4115 26.788 47.9288 26.2387 48.5795 25.812C49.2408 25.3853 50.0035 25.06 50.8675 24.836C51.7422 24.6227 52.7075 24.436 53.7635 24.276C54.8302 24.1053 55.8702 23.9613 56.8835 23.844C57.9075 23.716 58.8035 23.5933 59.5715 23.476L58.7395 23.988C58.7715 22.2813 58.4408 21.0173 57.7475 20.196C57.0542 19.3747 55.8488 18.964 54.1315 18.964C52.9475 18.964 51.9448 19.2307 51.1235 19.764C50.3128 20.2973 49.7422 21.14 49.4115 22.292L47.1235 21.62C47.5182 20.0733 48.3128 18.8733 49.5075 18.02C50.7022 17.1667 52.2542 16.74 54.1635 16.74C55.7422 16.74 57.0808 17.0387 58.1795 17.636C59.2888 18.2227 60.0728 19.076 60.5315 20.196C60.7448 20.6973 60.8835 21.2573 60.9475 21.876C61.0115 22.4947 61.0435 23.124 61.0435 23.764V34.5H58.9475V30.164L59.5555 30.42C58.9688 31.9027 58.0568 33.0333 56.8195 33.812C55.5822 34.5907 54.0995 34.98 52.3715 34.98ZM52.6435 32.948C53.7422 32.948 54.7022 32.7507 55.5235 32.356C56.3448 31.9613 57.0062 31.4227 57.5075 30.74C58.0088 30.0467 58.3342 29.268 58.4835 28.404C58.6115 27.8493 58.6808 27.2413 58.6915 26.58C58.7022 25.908 58.7075 25.4067 58.7075 25.076L59.6035 25.54C58.8035 25.6467 57.9342 25.7533 56.9955 25.86C56.0675 25.9667 55.1502 26.0893 54.2435 26.228C53.3475 26.3667 52.5368 26.532 51.8115 26.724C51.3208 26.8627 50.8462 27.06 50.3875 27.316C49.9288 27.5613 49.5502 27.892 49.2515 28.308C48.9635 28.724 48.8195 29.2413 48.8195 29.86C48.8195 30.3613 48.9422 30.8467 49.1875 31.316C49.4435 31.7853 49.8488 32.1747 50.4035 32.484C50.9688 32.7933 51.7155 32.948 52.6435 32.948ZM74.6168 34.5C73.6461 34.7027 72.6861 34.7827 71.7368 34.74C70.7981 34.6973 69.9554 34.4947 69.2088 34.132C68.4728 33.7693 67.9128 33.204 67.5288 32.436C67.2194 31.796 67.0488 31.1507 67.0168 30.5C66.9954 29.8387 66.9848 29.0867 66.9848 28.244V12.42H69.3208V28.148C69.3208 28.8733 69.3261 29.4813 69.3368 29.972C69.3581 30.452 69.4701 30.8787 69.6728 31.252C70.0568 31.9667 70.6648 32.3933 71.4968 32.532C72.3394 32.6707 73.3794 32.6387 74.6168 32.436V34.5ZM63.2888 19.236V17.22H74.6168V19.236H63.2888ZM78.4693 34.5V31.764H81.2053V34.5H78.4693Z" fill="white"/>
+              <circle cx="94" cy="31.5" r="6" fill="#D9D9D9"/>
+              </svg>              
+          </div>
+          <div class="flex mt-2 lg:gap-8 gap-6 tracking-wider cursor-pointer text-base text-gray-300" id="navItems">
+              <a href="./index.html" class="group">
+                 Features
+                  <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+              </a>
+              <a href="./index.html" class="group">
+                About
+                <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+              </a>
+              <a href="./index.html" class="group">
+                Blog
+                <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+              </a>
+              <a href="./index.html" class="group">
+                Contact
+                <!-- <div class="w-0 group-hover:w-full h-0.5 bg-custom-purple ease-in-out duration-500"></div> -->
+              </a>
+          </div>
+        </div>
+
+        <!-- form -->
+        <div class="">
+          <p class="text-gray-200 font-normal text-base">Receive the most recent news and updates 
+            directly in your email inbox!</p>
+
+            <form class="mt-4 flex flex-row gap-2 flex-1">
+                <div class="w-full">
+                  <label for="email" class="sr-only">Email Address</label>
+                  <input id="email" name="email" type="email" required class="appearance-none block w-full px-3 py-2 placeholder-gray-500 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter your email">
+                </div>
+                <div>
+                  <button type="submit" class="w-full flex justify-center py-2 px-4 text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Subscribe
+                  </button>
+                </div>
+           </form>
+
+        </div>
+
+      </div>
+      <!-- Icons -->
+      <div class="mt-4">
+        <div class="flex justify-items-start">
+
+          <div class="flex mt-2 lg:gap-8 gap-6 tracking-wider cursor-pointer text-base text-gray-300" id="navItems">
+            <a href="./index.html" class="group">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12Z" fill="#3399FF"/>
+                <path d="M18 12C18 8.7 15.3 6 12 6C8.7 6 6 8.7 6 12C6 15 8.175 17.475 11.025 17.925V13.725H9.525V12H11.025V10.65C11.025 9.15 11.925 8.325 13.275 8.325C13.95 8.325 14.625 8.475 14.625 8.475V9.975H13.875C13.125 9.975 12.9 10.425 12.9 10.875V12H14.55L14.25 13.725H12.825V18C15.825 17.55 18 15 18 12Z" fill="white"/>
+                </svg>                
+            </a>
+            <a href="./index.html" class="group">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12Z" fill="#3399FF"/>
+                <path d="M18 8.25C17.55 8.475 17.1 8.55 16.575 8.625C17.1 8.325 17.475 7.875 17.625 7.275C17.175 7.575 16.65 7.725 16.05 7.875C15.6 7.425 14.925 7.125 14.25 7.125C12.675 7.125 11.475 8.625 11.85 10.125C9.825 10.05 8.025 9.075 6.75 7.575C6.075 8.7 6.45 10.125 7.5 10.875C7.125 10.875 6.75 10.725 6.375 10.575C6.375 11.7 7.2 12.75 8.325 13.05C7.95 13.125 7.575 13.2 7.2 13.125C7.5 14.1 8.4 14.85 9.525 14.85C8.625 15.525 7.275 15.9 6 15.75C7.125 16.425 8.4 16.875 9.75 16.875C14.325 16.875 16.875 13.05 16.725 9.525C17.25 9.225 17.7 8.775 18 8.25Z" fill="white"/>
+                </svg>                
+            </a>
+            <a href="./index.html" class="group">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12Z" fill="#3399FF"/>
+                <path d="M12.0004 6.8999C13.6504 6.8999 13.8754 6.8999 14.5504 6.8999C15.1504 6.8999 15.4504 7.0499 15.6754 7.1249C15.9754 7.2749 16.2004 7.3499 16.4254 7.5749C16.6504 7.7999 16.8004 8.0249 16.8754 8.3249C16.9504 8.5499 17.0254 8.8499 17.1004 9.4499C17.1004 10.1249 17.1004 10.2749 17.1004 11.9999C17.1004 13.7249 17.1004 13.8749 17.1004 14.5499C17.1004 15.1499 16.9504 15.4499 16.8754 15.6749C16.7254 15.9749 16.6504 16.1999 16.4254 16.4249C16.2004 16.6499 15.9754 16.7999 15.6754 16.8749C15.4504 16.9499 15.1504 17.0249 14.5504 17.0999C13.8754 17.0999 13.7254 17.0999 12.0004 17.0999C10.2754 17.0999 10.1254 17.0999 9.45039 17.0999C8.85039 17.0999 8.55039 16.9499 8.32539 16.8749C8.02539 16.7249 7.80039 16.6499 7.57539 16.4249C7.35039 16.1999 7.20039 15.9749 7.12539 15.6749C7.05039 15.4499 6.97539 15.1499 6.90039 14.5499C6.90039 13.8749 6.90039 13.7249 6.90039 11.9999C6.90039 10.2749 6.90039 10.1249 6.90039 9.4499C6.90039 8.8499 7.05039 8.5499 7.12539 8.3249C7.27539 8.0249 7.35039 7.7999 7.57539 7.5749C7.80039 7.3499 8.02539 7.1999 8.32539 7.1249C8.55039 7.0499 8.85039 6.9749 9.45039 6.8999C10.1254 6.8999 10.3504 6.8999 12.0004 6.8999ZM12.0004 5.7749C10.2754 5.7749 10.1254 5.7749 9.45039 5.7749C8.77539 5.7749 8.32539 5.9249 7.95039 6.0749C7.57539 6.2249 7.20039 6.4499 6.82539 6.8249C6.45039 7.1999 6.30039 7.4999 6.07539 7.9499C5.92539 8.3249 5.85039 8.7749 5.77539 9.4499C5.77539 10.1249 5.77539 10.3499 5.77539 11.9999C5.77539 13.7249 5.77539 13.8749 5.77539 14.5499C5.77539 15.2249 5.92539 15.6749 6.07539 16.0499C6.22539 16.4249 6.45039 16.7999 6.82539 17.1749C7.20039 17.5499 7.50039 17.6999 7.95039 17.9249C8.32539 18.0749 8.77539 18.1499 9.45039 18.2249C10.1254 18.2249 10.3504 18.2249 12.0004 18.2249C13.6504 18.2249 13.8754 18.2249 14.5504 18.2249C15.2254 18.2249 15.6754 18.0749 16.0504 17.9249C16.4254 17.7749 16.8004 17.5499 17.1754 17.1749C17.5504 16.7999 17.7004 16.4999 17.9254 16.0499C18.0754 15.6749 18.1504 15.2249 18.2254 14.5499C18.2254 13.8749 18.2254 13.6499 18.2254 11.9999C18.2254 10.3499 18.2254 10.1249 18.2254 9.4499C18.2254 8.7749 18.0754 8.3249 17.9254 7.9499C17.7754 7.5749 17.5504 7.1999 17.1754 6.8249C16.8004 6.4499 16.5004 6.2999 16.0504 6.0749C15.6754 5.9249 15.2254 5.8499 14.5504 5.7749C13.8754 5.7749 13.7254 5.7749 12.0004 5.7749Z" fill="white"/>
+                <path d="M12.0004 8.7749C10.2004 8.7749 8.77539 10.1999 8.77539 11.9999C8.77539 13.7999 10.2004 15.2249 12.0004 15.2249C13.8004 15.2249 15.2254 13.7999 15.2254 11.9999C15.2254 10.1999 13.8004 8.7749 12.0004 8.7749ZM12.0004 14.0999C10.8754 14.0999 9.90039 13.1999 9.90039 11.9999C9.90039 10.8749 10.8004 9.8999 12.0004 9.8999C13.1254 9.8999 14.1004 10.7999 14.1004 11.9999C14.1004 13.1249 13.1254 14.0999 12.0004 14.0999Z" fill="white"/>
+                <path d="M15.3004 9.4499C15.7146 9.4499 16.0504 9.11412 16.0504 8.6999C16.0504 8.28569 15.7146 7.9499 15.3004 7.9499C14.8862 7.9499 14.5504 8.28569 14.5504 8.6999C14.5504 9.11412 14.8862 9.4499 15.3004 9.4499Z" fill="white"/>
+                </svg>                
+            </a>
+            <a href="./index.html" class="group">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12Z" fill="#3399FF"/>
+                <path d="M8.7 18H6.15V9.975H8.7V18ZM7.425 8.85C6.6 8.85 6 8.25 6 7.425C6 6.6 6.675 6 7.425 6C8.25 6 8.85 6.6 8.85 7.425C8.85 8.25 8.25 8.85 7.425 8.85ZM18 18H15.45V13.65C15.45 12.375 14.925 12 14.175 12C13.425 12 12.675 12.6 12.675 13.725V18H10.125V9.975H12.525V11.1C12.75 10.575 13.65 9.75 14.925 9.75C16.35 9.75 17.85 10.575 17.85 13.05V18H18Z" fill="white"/>
+                </svg>                
+            </a>
+        </div>
+
+        </div>
+      </div>
+
+  </div>
+
+</section>
+
+
+<script type="text/javascript" src="/build/assets/Js/main.js">
+
+
+
+</script>
+  
+</body>
+</html>
